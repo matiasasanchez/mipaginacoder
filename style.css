@@ -86,7 +86,8 @@ font-family: Georgia,'Times New Roman', Times, serif;
 
 h2 {    
     text-align: center; color:white ;
-padding: 20px
+padding: 20px;
+background-image: -o-linear-gradient( 45deg, #845ec2);
 }
 
 .pcontainer { 
@@ -232,3 +233,4 @@ h2 {
     display: block;
 }
 }
+

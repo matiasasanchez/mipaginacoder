@@ -78,7 +78,8 @@ h1 {
     
     text-align: center;
     size: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: white;
 font-family: Georgia,'Times New Roman', Times, serif;
 
@@ -152,29 +153,26 @@ ul{
     margin: auto;
 }
 
-form { color: rgb(255, 255, 255);
-    padding: 100px 700px ; 
-    border-color: rgb(224, 107, 107);
-    background-color: rgb(149, 146, 131);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; 
-border-radius: 10px;
 
-display: inline-block;
-position: absolute; 
-width: 100%;
-margin-top: 10px ;
-margin-left: 12px;
-}
+.form-control {
+    width: 50%;
+   padding-bottom: 10px;
+    margin: auto;
+ }
 
-input { 
-    color:black ; 
-    font-size: 15px;
-    display: block;
-    padding: 1%;
-    
+.mb-3 {
+    width: 50%;
+   margin: auto;
+   padding-top: 80px;
+   
     
 }
 
+.btn-outline-light {
+
+margin-left: 65%;
+
+}
 a {
     text-decoration: none;
     color:white;
@@ -182,7 +180,9 @@ a {
 }
 
     a:hover {
- background-color: rgb(47, 101, 97) ;
+ background-color: rgb(47, 149, 120) ;
+ transform: scale(1.1);
+ transition: ease-in-out .1s;
     }
 
 footer { color: white; 

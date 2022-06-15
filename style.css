@@ -52,15 +52,20 @@ grid-template-rows: 1fr 1fr;
     grid-area: "Set Live";
     background-color: white ;
     text-align: center;
-    margin: 100px;
+     margin-top: 100px;
 }
 
+.film
+{ grid-area: "Filming";
+    background-color: white ; 
+    padding-left: 149%;
+    padding-bottom: 20%;
+}
 
 .mastering {
     grid-area: "Mastering";
     background-color: white ;
     text-align: center;
-    margin: 100px;
 }
 
 
@@ -183,6 +188,7 @@ a {
  background-color: rgb(47, 149, 120) ;
  transform: scale(1.1);
  transition: ease-in-out .1s;
+ background-image: linear-gradient(rgb(72, 105, 72), rgb(69, 130, 154));
     }
 
 footer { color: white; 

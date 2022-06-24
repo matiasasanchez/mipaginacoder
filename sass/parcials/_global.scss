@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0; 
+  }
+
+
+body  { 
+    background-image:url("../assets/fondo2.jpg");
+    background-size: cover; 
+    min-height: 100vh;
+    position: relative;}
+
+.gridcontainer{ 
+    
+        display: grid;
+        background-color: none ; 
+        grid-template-columns:1fr; 
+        grid-template-rows: 3fr; 
+        border: none;
+        margin: auto;
+ }
+    .gridcontainer div {
+        background-color: white;
+        margin: auto;
+        border: 1px solid white;
+    background-image: url("./assets/img3.jpg"); 
+}
+
+.gridcontainerservices {
+
+
+display: grid;
+margin: auto;
+background-color: white;
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: 1fr 1fr;   
+}
+
+
+.song { 
+    grid-area: "songwriting";
+    background-color: white ;
+    @include box; 
+
+}
+
+.setlive {
+    grid-area: "Set Live";
+    background-color: white ;
+    @include box; 
+}
+
+.film
+{ grid-area: "Filming";
+    background-color: white ; 
+    padding-left: 149%;
+    padding-bottom: 20%;
+}
+
+.mastering {
+    grid-area: "Mastering";
+    background-color: white ;
+    text-align: center;
+}
+
+
+.logoindex { width: 150px; 
+position: absolute;
+top: 10px}
+
+.imgcontainer { 
+    display:inline; 
+    margin: 10%;   
+
+}
+
+h1 {
+    
+    text-align: center;
+    size: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    font-family: Georgia,'Times New Roman', Times, serif;
+
+}
+
+h2 {    
+    text-align: center; 
+    color:white ;
+    padding: 20px;
+    background-image: -o-linear-gradient( 45deg, #845ec2);
+}
+
+.pcontainer { 
+    padding: 80px 100px 80px 100px; 
+    color:white; 
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body {font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif, sans-serif} 
+
+nav {
+padding-top: 80px;
+ padding-bottom: 80px;
+ padding-right: 20px;
+ padding-left: 20px;
+
+}
+
+
+li {
+
+    display: inline;
+    margin: 0 10px;
+}
+
+
+h3 {
+    margin-top: 100px; 
+    margin-bottom: 200px;
+}
+
+
+p { font-style: $backparrafo; }
+
+
+p { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+padding: 150px;
+color: map-get($colores, "txt");
+}
+
+video {
+   margin: auto;
+
+}
+    
+ul{
+    text-align: end;
+    font-size: 20px;
+    list-style-type: none;
+    
+}
+
+.servitem {
+
+    padding-top: 20px;
+    color: white;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+.form-control {
+    width: 50%;
+   padding-bottom: 10px;
+    margin: auto;
+ }
+
+.mb-3 {
+    width: 50%;
+   margin: auto;
+   padding-top: 80px;
+   
+    
+}
+
+.btn-outline-light {
+
+margin-left: 65%;
+
+}
+a {
+    text-decoration: none;
+    color:white;
+
+}
+
+    a:hover {
+ background-color: rgb(47, 149, 120) ;
+ transform: scale(1.1);
+ transition: ease-in-out .1s;
+ background-image: linear-gradient(rgb(72, 105, 72), rgb(69, 130, 154));
+    }
+
+footer { @extend p; 
+    color: white; 
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 80px;
+    width: 100%;
+    padding-block-start: 10%;
+    position: absolute;
+    left: 10px ; 
+    bottom: 0;
+ } 
+
+ 
+ .menu-hamburguer {
+     display: none;
+ }
+
+@media screen and (max-width: 555px)
+
+{
+    ul { 
+ display: none; 
+    }
+
+.menu-hamburguer { 
+
+    display: block;
+    margin-left: 50%; 
+}
+
+h1 { 
+font-size: small;
+padding-left: 9%; 
+
+}
+
+h2 {
+
+    font-size: x-small;
+    padding-left: 9%; 
+}
+
+.imgcontainer {
+    display: block;
+    background-color: none;
+
+}
+.gridcontainerservices {
+   display: block; 
+}
+}
+
